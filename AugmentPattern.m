@@ -82,6 +82,7 @@ end
 ID=Shuff([1:size(Loc,1)]');
 if opt.show;
     figure;
+    delete('Gif\*')
 end
 for K=1:size(Loc,1)
     b=Loc(ID(K),:);
@@ -109,10 +110,10 @@ for K=1:size(Loc,1)
     g=medfilt2(g,[3,3],'symmetric');
     g(WW==0)=g0(WW==0);
     L0(b(1)-m+1:b(1)+sz(1)+m,b(2)-m+1:b(2)+sz(2)+m,:)=g;
-if opt.show
-    clf; imshow(uint8(B0(1:S(1),1:S(2),:))); drawnow; 
-    imwrite(uint8(B0(1:S(1),1:S(2),:)),['Gif/Frame_' num2str(K) '.png']);
-end
+    if opt.show
+        clf; imshow(uint8(B0(1:S(1),1:S(2),:))); drawnow;
+        imwrite(uint8(B0(1:S(1),1:S(2),:)),['Gif/Frame_' num2str(K) '.png']);
+    end
 end
 L0=medfilt2(L0,[3,3],'symmetric');
 LAB2=L0;
@@ -153,11 +154,11 @@ filename='Final.gif';
 D=dir(['Gif/*.png']);
 for I = 2:numel(D)
     A=imread(['Gif/Frame_' num2str(I) '.png']); %A=A(:,200:end-200,:);
-%     B=imread(['Gif/Frame_' num2str(I) '.png']); B=B(:,200:end-200,:);
-%     A=cat(2,B,A); 
-%     A2=uint8(ones(size(A,1)+60,size(A,2),size(A,3)).*255);
-%     A2(61:end,:,:)=A; A=A2; %A=imresize(A,.3);%r
-A=uint8(A);
+    % B=imread(['Gif/Frame_' num2str(I) '.png']); B=B(:,200:end-200,:);
+    % A=cat(2,B,A);
+    % A2=uint8(ones(size(A,1)+60,size(A,2),size(A,3)).*255);
+    % A2(61:end,:,:)=A; A=A2; %A=imresize(A,.3);%r
+    A=uint8(A);
     [imind,cm] = rgb2ind(A,256);
     if I == 2;
         imwrite(imind,cm,filename,'gif', 'Loopcount',inf,'DelayTime',0.08);
