@@ -1,6 +1,12 @@
 # Augmented-Pattern
 Image augmentation tool for creating new realizations and their labels
 
+
+![Alt text](https://github.com/ArashRabbani/Augmented-Pattern/blob/main/Carbonate.gif)
+![Alt text](https://github.com/ArashRabbani/Augmented-Pattern/blob/main/Sandstone.gif)
+![Alt text](https://github.com/ArashRabbani/Augmented-Pattern/blob/main/Placental%20Tissue.gif)
+
+
 This repository 
 ## Demo 1
 
