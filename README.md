@@ -43,7 +43,7 @@ For running each of demo files, you need to set some input paramters:
 - Grid size ratio as an integer larger than 2, pereferably below 20 for computational efficiency. larger the ratio, smaller the tiles will be.
 - Show or not? the last input takes the value of 1 (to show the reuslts) or 0 to hide them. 
 
-Outputs of the "AugmentPattern" fuction are: 
+Outputs of the "AugmentPattern" function are: 
 - Reconstructed image
 - Reconstructed mask/label
 
