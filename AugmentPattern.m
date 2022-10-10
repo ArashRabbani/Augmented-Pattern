@@ -154,10 +154,7 @@ filename='Final.gif';
 D=dir(['Gif/*.png']);
 for I = 2:numel(D)
     A=imread(['Gif/Frame_' num2str(I) '.png']); %A=A(:,200:end-200,:);
-    % B=imread(['Gif/Frame_' num2str(I) '.png']); B=B(:,200:end-200,:);
-    % A=cat(2,B,A);
-    % A2=uint8(ones(size(A,1)+60,size(A,2),size(A,3)).*255);
-    % A2(61:end,:,:)=A; A=A2; %A=imresize(A,.3);%r
+    A=imresize(A,[256,256]);
     A=uint8(A);
     [imind,cm] = rgb2ind(A,256);
     if I == 2;
