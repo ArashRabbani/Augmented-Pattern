@@ -6,6 +6,7 @@ Arash Rabbani, Masoud Babaei, Masoumeh Gharib, Automated segmentation and morpho
 
 ## Demo 1
 Use this code to see a set of reconstructed images and their labeles. This is useful when you need to augment a dataset of images and labels for machine learning purposes. Here are some sample results for reconstruction of a placental tissue as well as a porous carbonate rock:
+<br>
 ![Alt text](https://github.com/ArashRabbani/Augmented-Pattern/blob/main/img/Reconstructed_1.jpg)
 ![Alt text](https://github.com/ArashRabbani/Augmented-Pattern/blob/main/img/Reconstructed_2.jpg)
 
@@ -31,6 +32,7 @@ Use this code to generate a short animated gif file of the reconstruction proces
 
 ## Demo 3
 Use this code to generate a set reconstructed images and their corresponded labels and save them on the Output directory. 
+<br>
 ![Alt text](https://github.com/ArashRabbani/Augmented-Pattern/blob/main/output.png)
 
 
