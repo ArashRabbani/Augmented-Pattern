@@ -4,8 +4,11 @@ Image augmentation tool for creating new realizations and their labels
 
 ![Alt text](https://github.com/ArashRabbani/Augmented-Pattern/blob/main/Carbonate.gif)
 ![Alt text](https://github.com/ArashRabbani/Augmented-Pattern/blob/main/Sandstone.gif)
+### Placental tissue
+![Alt text](https://github.com/ArashRabbani/Augmented-Pattern/blob/main/Data/Input.png)
+#### Original image
 ![Alt text](https://github.com/ArashRabbani/Augmented-Pattern/blob/main/Placental%20Tissue.gif)
-
+#### Reconstructed image
 
 This repository 
 ## Demo 1
