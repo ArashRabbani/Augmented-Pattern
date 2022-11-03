@@ -1,5 +1,6 @@
 # Augmented-Pattern
-Image augmentation tool for creating new realizations and their labels using Matlab
+#Image augmentation tool for creating new realizations and their labels using Matlab
+
 This repository can be used to generate new realizations of the images with patterns, especially porous or composite material. In addition, if you have a label map or mask that distinguish specific elements or parts in the images, that map can be reconstructed accordingly. Here, I have provided a few examples through Demo codes. If you are using this code please cite this paper: <br>
 Arash Rabbani, Masoud Babaei, Masoumeh Gharib, Automated segmentation and morphological characterization of placental histology images based on a single labeled image, arXiv https://arxiv.org/abs/2210.03566, (2022). ([Link](https://arxiv.org/abs/2210.03566))
 
